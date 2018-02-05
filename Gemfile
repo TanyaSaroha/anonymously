@@ -8,7 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-
+#Use factory_girls_rails to use predefined collection og values in testing
+gem "factory_girl_rails"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
