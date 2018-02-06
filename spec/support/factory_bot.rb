@@ -1,5 +1,5 @@
 RSpec.configure do |config|
-  config.include FactoryGirl::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 end
 
 RSpec.configure do |config|
@@ -11,7 +11,7 @@ RSpec.configure do |config|
 
     begin
       DatabaseCleaner.start
-      FactoryGirl.lint
+      FactoryBot.lint
     ensure
       DatabaseCleaner.clean
     end
