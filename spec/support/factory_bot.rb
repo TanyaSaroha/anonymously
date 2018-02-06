@@ -3,7 +3,11 @@ RSpec.configure do |config|
 end
 
 RSpec.configure do |config|
+<<<<<<< HEAD
   # ... other FactoryBot configs
+=======
+  # ... other FactoryGirl configs
+>>>>>>> 4862ba0da767ddf9f4c58ba81f60b9ecd030975c
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
@@ -16,5 +20,9 @@ RSpec.configure do |config|
       DatabaseCleaner.clean
     end
   end
+<<<<<<< HEAD
 end
 
+=======
+end
+>>>>>>> 4862ba0da767ddf9f4c58ba81f60b9ecd030975c
