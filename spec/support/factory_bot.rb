@@ -3,19 +3,17 @@ RSpec.configure do |config|
 end
 
 RSpec.configure do |config|
-  # ... other FactoryGirl configs
+# ... other FactoryBot configs
 
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
-    DatabaseCleaner.clean_with(:truncation)
+	config.before(:suite) do
+	  DatabaseCleaner.strategy = :transaction
+	  DatabaseCleaner.clean_with(:truncation)
 
-    begin
-      DatabaseCleaner.start
-      FactoryBot.lint
-    ensure
-      DatabaseCleaner.clean
-    end
-  end
+	  begin
+	    DatabaseCleaner.start
+	    FactoryBot.lint
+	  ensure
+	    DatabaseCleaner.clean
+  	end
+	end
 end
-
-
