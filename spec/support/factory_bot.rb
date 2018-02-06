@@ -5,9 +5,9 @@ end
 RSpec.configure do |config|
   # ... other FactoryBot configs
 
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
-    DatabaseCleaner.clean_with(:truncation)
+	config.before(:suite) do
+	  DatabaseCleaner.strategy = :transaction
+	  DatabaseCleaner.clean_with(:truncation)
 
     begin
       DatabaseCleaner.start
