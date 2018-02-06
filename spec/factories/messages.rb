@@ -1,5 +1,4 @@
-FactoryGirl.define do
-  factory :message do
-    
+FactoryBot.define do
+	
   end
 end
